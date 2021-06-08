@@ -3,7 +3,6 @@
 ************************************/
 
 @import "partials/variabile";
-
-body {
-    font-family: sans-serif;
-}
+@import "partials/utilities";
+@import "partials/header";
+@import "partials/main";

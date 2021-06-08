@@ -1,0 +1,39 @@
+.main-navigation {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    .img-home-link {
+        margin-right: 50px;
+    }
+
+    img {
+        width: 70px;
+    }
+
+    .nav-ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                border-bottom: 2px solid $secondary-color;
+            }
+            &.active a {
+                color: $secondary-color;
+            }
+        }
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: $link-txt;
+        }
+    }
+}

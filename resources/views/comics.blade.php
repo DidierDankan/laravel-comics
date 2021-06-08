@@ -14,6 +14,11 @@
         
     </head>
     <body>
-        <h1>welcome</h1>
+        {{-- main header --}}
+        @include('partials/header') 
+        {{-- main content --}}
+        @include('partials/main')
+        {{-- main footer --}}
+        @include('partials/footer')
     </body>
 </html>

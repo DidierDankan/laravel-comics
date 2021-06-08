@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
 
     $comics = config('databaseDC');
-    dump($comics);
+    
 
-    return view('comics', ['comics' => $comics]);
+    return view('comics', ['cards' => $comics]);
 })->name('comics');
 
 

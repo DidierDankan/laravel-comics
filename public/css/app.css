@@ -2,7 +2,93 @@
     CSS GLOBALE
 ************************************/
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: sans-serif;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.main-navigation .img-home-link {
+  margin-right: 50px;
+}
+
+.main-navigation img {
+  width: 70px;
+}
+
+.main-navigation .nav-ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.main-navigation .nav-ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.main-navigation .nav-ul li:last-child {
+  margin-right: 0;
+}
+
+.main-navigation .nav-ul li.active {
+  border-bottom: 2px solid #0182f9;
+}
+
+.main-navigation .nav-ul li.active a {
+  color: #0182f9;
+}
+
+.main-navigation .nav-ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #434e4b;
+}
+
+.noir-background {
+  padding: 10px;
+  background-color: #1c1c1c;
+  text-align: center;
+}
+
+.noir-background .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.noir-background .cards .card {
+  flex-basis: calc(100% / 6 - 15px);
+}
+
+.noir-background .cards .card img {
+  width: 100%;
+}
+
+.noir-background .cards .card .card-title {
+  color: #fef5f8;
+}
+
+.noir-background .main-btn {
+  padding: 5px 15px;
+  background-color: #0182f9;
+  border: none;
 }
 
