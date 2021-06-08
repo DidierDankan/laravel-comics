@@ -22,6 +22,7 @@
                 margin-right: 0;
             }
             &.active {
+                // content: "";
                 border-bottom: 2px solid $secondary-color;
             }
             &.active a {

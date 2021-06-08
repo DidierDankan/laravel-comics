@@ -1,24 +1,27 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('content')
+    
+    <section class="noir-background">
+        <div class="container">
+            <div class="cards">
+                @foreach ($cards as $card)
+                    
+                    <div class="card">
+                        <img src=" {{ $card['image'] }} " alt="">
+                        <h5 class="card-title"> {{ $card['title'] }} </h5>
+                    </div>
+                @endforeach
+            </div>
+            
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+            <button class="main-btn">
+                <a href="https://www.dccomics.com/comics"> load more</a>
+            </button>
+            
+        </div>
 
-        <!-- Styles -->
-        <link rel="stylesheet" href=" {{ asset('css/app.css') }} ">
-        
-    </head>
-    <body>
-        {{-- main header --}}
-        @include('partials/header') 
-        {{-- main content --}}
-        @include('partials/main')
-        {{-- main footer --}}
-        @include('partials/footer')
-    </body>
-</html>
+    </section>
+@endsection
+
+</main>

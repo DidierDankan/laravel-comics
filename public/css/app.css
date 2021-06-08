@@ -63,7 +63,7 @@ body {
 }
 
 .noir-background {
-  padding: 10px;
+  padding: 20px;
   background-color: #1c1c1c;
   text-align: center;
 }
@@ -72,6 +72,7 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 40px;
 }
 
 .noir-background .cards .card {
@@ -80,15 +81,84 @@ body {
 
 .noir-background .cards .card img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .noir-background .cards .card .card-title {
   color: #fef5f8;
+  margin-bottom: 40px;
 }
 
 .noir-background .main-btn {
-  padding: 5px 15px;
+  padding: 5px 40px;
   background-color: #0182f9;
   border: none;
+  cursor: pointer;
+}
+
+.noir-background .main-btn a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fef5f8;
+}
+
+.footer {
+  height: 100px;
+  background-image: linear-gradient(to bottom, #0182f9 0%, #0182f9 15%, #303030 15%, #303030 100%);
+}
+
+.footer .footer-display {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer .sign-btn {
+  padding: 10px 10px;
+  border: 1px solid #0182f9;
+  background: transparent;
+}
+
+.footer .sign-btn a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fef5f8;
+  font-weight: 700;
+}
+
+.footer .footer-social {
+  flex-grow: 1;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.footer .footer-social .follow-us {
+  text-transform: uppercase;
+  color: #0182f9;
+  margin-right: 15px;
+}
+
+.footer .footer-social .footer-ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.footer .footer-social .footer-ul li {
+  margin-right: 15px;
+}
+
+.footer .footer-social .footer-ul li img {
+  width: 30px;
+}
+
+.empty-background {
+  flex-grow: 1;
+}
+
+.coming {
+  color: #fef5f8;
 }
 
